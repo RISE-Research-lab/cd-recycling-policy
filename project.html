@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project | C&amp;D Recycling Policy Simulation</title>
+  <meta name="description" content="Abstract, conceptual framework, research approach, and expected benefits of the C&amp;D recycling policy simulation project.">
+  <meta property="og:title" content="Project | C&amp;D Recycling Policy Simulation">
+  <meta property="og:description" content="Abstract, conceptual framework, research approach, and expected benefits of the C&amp;D recycling policy simulation project.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="14" fill="#134074"/><path d="M17 36a15 15 0 0 1 26-13" fill="none" stroke="#5EEAD4" stroke-width="6" stroke-linecap="round"/><path d="M47 28a15 15 0 0 1-26 13" fill="none" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/><path d="M38 14l9 7-10 4z" fill="#5EEAD4"/><path d="M26 50l-9-7 10-4z" fill="#F59E0B"/></svg>
+        <span>
+          <span class="brand-name">C&amp;D Recycling Policy Simulation</span>
+          <span class="brand-sub">Hinkley Center research project &middot; University of North Florida</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html" aria-current="page">Project</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="tag.html">TAG</a></li>
+          <li><a href="meetings.html">Meetings</a></li>
+          <li><a href="reports.html">Reports</a></li>
+          <li><a href="news.html">News &amp; Photos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <span class="kicker">About the project</span>
+        <h1>Project overview</h1>
+        <p>Why counties need a way to test C&amp;D recycling policies before adopting them, and how this project will provide one.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap abstract-layout">
+        <div class="prose">
+          <h2>Abstract</h2>
+          <p>Florida generates millions of tons of construction and demolition (C&amp;D) debris annually, yet recycling performance varies widely across counties and is often limited by economic and infrastructure constraints. Despite documented economic and environmental benefits of C&amp;D recycling, most Florida counties operate without a diversion ordinance. County officials seeking to improve C&amp;D recycling rates face a fundamental problem: they lack the analytical tools to evaluate how alternative policy designs, diversion mandates, deposit-refund systems, differential tipping fees, facility certification standards, procurement mandates for recycled materials, or combinations thereof, would perform under their specific local conditions before committing public resources and political capital to implementation.</p>
+          <p>This project develops a decision-support simulation prototype designed to give county solid waste managers, planners, elected officials, and recycling industry stakeholders a practical means of testing C&amp;D recycling policy options before adopting them. The prototype models the key actors in the C&amp;D waste system (i.e., contractors of different firm sizes making material-by-material disposal decisions, recycling facilities with specific processing capacities and gate policies, landfills, end-product markets, and regulatory bodies) and captures how these actors interact and respond when policy conditions change. The model accounts for the factors that drive disposal decisions in practice such as cost, convenience, compliance pressure, risk tolerance, and the reality that a large demolition firm with established recycling relationships will respond to a new ordinance very differently than a small contractor accustomed to landfilling.</p>
+          <p>The research is carried out in four phases. The first documents the current regulatory environment, fee structures, facility characteristics, and contractor practices across Florida counties. The second translates these findings into a structured model of how stakeholders make decisions, how materials flow through the system, and where policy interventions take effect. The third builds and validates the simulation, calibrating it against observed diversion rates in a representative Florida county with different policy environments and facility infrastructure. The fourth applies the validated prototype to test various policy architectures. Each scenario is tested under county-specific conditions to determine not only whether a policy improves diversion, but by how much, at what cost, with what impact on different sizes of contracting firms, and with what unintended consequences including illegal dumping, processing bottlenecks at recycling facilities, material leakage to neighboring counties, and market saturation of recycled products.</p>
+          <p>This prototype is designed from the outset to demonstrate a practitioner-operated tool, developed and tested for a single Florida county as a proof of concept. County staff can input their own local parameters (e.g., tipping fees, facility locations, contractor populations, hauling distances, and current diversion rates) and receive outputs that directly inform policy decisions: projected diversion rates with confidence intervals, compliance costs broken down by contractor firm size, facility utilization and bottleneck risk, enforcement staffing requirements, net fiscal impact to the county, and environmental benefits including estimated greenhouse gas reductions.</p>
+        </div>
+        <figure class="framework">
+          <img src="conceptual-framework.jpg" width="1449" height="769"
+               alt="Conceptual framework diagram with three levels. Agent level: county government and FDEP agents; contractor agents (large firms and small businesses) whose choices weigh cost, convenience, compliance, and risk; facility agents (material recovery facilities, landfills, concrete crushers, scrap yards); and end-market agents (aggregate, metal, wood, drywall). System level: four linked systems (regulatory and policy, waste generation and supply, processing and disposal, and end-product markets) connected by policy constraints and prices. System-of-systems level: a cloud of emergent behaviors such as statewide recycling rates, illegal dumping risk, market stability, collective performance, and dynamic feedback.">
+          <figcaption><strong>Conceptual framework.</strong> The C&amp;D recycling system is modeled at three levels: individual agents, four interacting systems, and the system-wide behaviors that emerge from them. <a href="conceptual-framework.jpg">Open full-size image</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Research approach</h2>
+        <p class="section-intro">Four phases take the project from what is happening in Florida counties today to tested policy options.</p>
+        <div class="grid">
+          <div class="card">
+            <span class="phase-num" aria-hidden="true">1</span>
+            <h3>Definition: building the knowledge base</h3>
+            <p>Document regulations, fee structures, and facilities across Florida counties. Validate behavioral assumptions through interviews with contractors, facility operators, and county solid waste managers. Map material flows and facilities within a 30-mile haul radius.</p>
+          </div>
+          <div class="card">
+            <span class="phase-num" aria-hidden="true">2</span>
+            <h3>Abstraction: conceptual model</h3>
+            <p>Translate the findings into a structured model of who makes which decisions, how materials move through the system, and where policies take effect.</p>
+          </div>
+          <div class="card">
+            <span class="phase-num" aria-hidden="true">3</span>
+            <h3>Implementation and validation</h3>
+            <p>Build the simulation, then validate it in three stages: review of the model logic by the TAG, calibration against a representative Florida county, and sensitivity analysis.</p>
+          </div>
+          <div class="card">
+            <span class="phase-num" aria-hidden="true">4</span>
+            <h3>Scenario analysis</h3>
+            <p>Test policy options under county-specific conditions: how much diversion each achieves, at what cost, for which contractors, and with what side effects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Side effects the model tracks</h2>
+        <p class="section-intro">Policies produce effects that no single actor sees on their own. The model flags them before a policy is adopted, not after.</p>
+        <div class="grid grid-tight">
+          <div class="card card-amber"><h3>Illegal dumping</h3><p>When legal disposal becomes more expensive</p></div>
+          <div class="card card-amber"><h3>Facility bottlenecks</h3><p>When redirected material exceeds processing capacity</p></div>
+          <div class="card card-amber"><h3>Cross-county leakage</h3><p>When loads move to cheaper facilities next door</p></div>
+          <div class="card card-amber"><h3>Market saturation</h3><p>When recycled supply outpaces demand</p></div>
+          <div class="card card-amber"><h3>Burden on small contractors</h3><p>Reported by contractor firm size</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Who benefits and how</h2>
+        <p class="section-intro">The prototype is built for the people who make, carry out, and live with C&amp;D recycling policy in Florida. Each group gets answers it cannot get today.</p>
+        <div class="grid benefit-grid">
+          <article class="card card-navy benefit">
+            <h3>County solid waste directors and planners</h3>
+            <p class="benefit-lead">County-specific answers before a policy goes to the commission.</p>
+            <p>When staff recommend a diversion ordinance, commissioners ask predictable questions. Will it work here, or only in counties like Lee? Can our recycling facilities handle the extra material? Will contractors comply, pay the fee, or dump illegally? What will it cost to administer? Will it hurt small contractors? The prototype answers these with numbers for the county&rsquo;s own conditions:</p>
+            <ul class="plain-list">
+              <li>Whether a diversion target is achievable with the county&rsquo;s facility capacity, contractor base, and haul distances, and the point where processing bottlenecks begin</li>
+              <li>The probability of meeting the target, not just the average projected rate, so officials see the downside risk</li>
+              <li>Net fiscal impact: revenue from diversion fees, deposits, or surcharges against the cost of enforcement</li>
+              <li>Cost per additional ton diverted, for side-by-side comparison of policy options</li>
+              <li>Compliance costs by contractor firm size</li>
+              <li>Tons diverted from landfill and greenhouse gas emissions avoided, ready for commission presentations, public comment responses, and grant applications</li>
+            </ul>
+          </article>
+          <article class="card card-accent benefit">
+            <h3>FDEP and state policymakers</h3>
+            <p class="benefit-lead">Evidence for statewide guidance.</p>
+            <p>The platform addresses a longstanding question: should Florida develop a statewide model C&amp;D diversion ordinance, and if so, how should it be structured?</p>
+            <ul class="plain-list">
+              <li>In a follow-on phase, the same ordinance design can be run across county templates (urban and rural, high and low construction activity, infrastructure-rich and infrastructure-poor) to show which elements to standardize statewide and which to leave to local discretion</li>
+              <li>Evaluates state-level levers outside county ordinances: FDOT specification approval for recycled C&amp;D aggregate in state road construction, state grants for recycling facility equipment upgrades, and possible statewide material-specific disposal restrictions</li>
+            </ul>
+          </article>
+          <article class="card card-amber benefit">
+            <h3>Demolition contractors and industry associations</h3>
+            <p class="benefit-lead">Compliance cost data for public comment.</p>
+            <p>When an ordinance is under public review, contractors and their associations need numbers, not assertions.</p>
+            <ul class="plain-list">
+              <li>Compliance cost impact by firm size for each policy option</li>
+              <li>Policies where compliance costs less than non-compliance: incentive-aligned options contractors have reason to support</li>
+              <li>The project types, material streams, and locations where a policy creates the most difficulty</li>
+              <li>Evidence for recommending exemption thresholds, phase-in schedules, and accommodations for small contractors</li>
+            </ul>
+          </article>
+          <article class="card card-accent benefit">
+            <h3>C&amp;D recycling facility operators</h3>
+            <p class="benefit-lead">Forward-looking volumes for investment planning.</p>
+            <p>Operators decide whether to expand capacity, buy new sorting or crushing equipment, or seek certification based on what they expect to receive.</p>
+            <ul class="plain-list">
+              <li>Projected inbound volumes, material composition, and contamination levels under each policy option</li>
+              <li>Which quality and performance standards would give the greatest competitive advantage under different policy configurations, so operators can prioritize improvements</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proposal">
+      <div class="wrap">
+        <div class="sponsor">
+          <h2>Full proposal</h2>
+          <p>The full project proposal, with budget and salary details removed, is available as a PDF.</p>
+          <p><a href="full-proposal.pdf">Download the full proposal (PDF)</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2>The project</h2>
+        <p>A Decision-Support Simulation Platform for Evaluating Construction and Demolition Debris Recycling Policies in Florida Counties</p>
+        <p>University of North Florida &middot; College of Computing, Engineering and Construction</p>
+      </div>
+      <div>
+        <h2>Sponsorship</h2>
+        <p>This research is sponsored and funded by the William W. &ldquo;Bill&rdquo; Hinkley Center for Solid and Hazardous Waste Management.</p>
+        <p><a href="https://www.hinkleycenter.org/">hinkleycenter.org</a></p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>Navid Nickdoost, Ph.D., Principal Investigator</p>
+        <p><a href="mailto:navid.nickdoost@unf.edu">navid.nickdoost@unf.edu</a></p>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">
+      <!-- Update this date whenever you change the site. -->
+      Last updated: September 14, 2026
+    </div>
+  </footer>
+</body>
+</html>
